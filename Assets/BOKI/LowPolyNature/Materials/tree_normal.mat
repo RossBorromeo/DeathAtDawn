@@ -183,8 +183,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Vector2_8ba397d6d57149b485079cf6bd0e4ffa: {r: 2, g: 0, b: 0, a: 0}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.11213954, g: 0.6792453, b: 0.1253966, a: 1}
+    - _Color: {r: 0.1121395, g: 0.6792453, b: 0.12539655, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
