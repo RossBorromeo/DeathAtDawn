@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+guid: b038ef041dee9504c8a64d5eef001e48
+========
 guid: 71c75439131ef714fab8c9de757415ad
+>>>>>>>> sub_branch_UI:Assets/Scenes/UI/Scenes/MainMenu.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
