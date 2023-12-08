@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -653,7 +653,7 @@ MonoBehaviour:
   playButton: {fileID: 1923793621}
   ControlsMenu: {fileID: 1091173037}
   soundSource: {fileID: 301557745}
-  soundClip: {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
+  soundClip: {fileID: 0}
 --- !u!4 &505037494
 Transform:
   m_ObjectHideFlags: 0
