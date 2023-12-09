@@ -21,7 +21,6 @@ public class MenuManager : MonoBehaviour
     public void OnPlayButton()
     {
         PlaySound();
-
         SceneManager.LoadScene(0);
     }
 
