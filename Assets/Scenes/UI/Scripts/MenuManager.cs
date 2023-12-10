@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,11 +31,11 @@ public class MenuManager : MonoBehaviour
         soundSource.Play(); //play sound
     }
 
-    public void OnControlsNutton()
+    public void OnControlsButton()
     {
         PlaySound();
         soundSource.Play(); //play sound
-        SceneManager.LoadScene("Controls");
+        SceneManager.LoadScene(2);
     }
 
     public void OnQuitButton()
@@ -43,5 +44,14 @@ public class MenuManager : MonoBehaviour
         playButton.SetActive(false);
         ControlsMenu.SetActive(false);
         Application.Quit();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Console.WriteLine("Quit");
+            Application.Quit();
+        }
     }
 }
