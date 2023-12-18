@@ -36,18 +36,18 @@ namespace GD
         {
             var sceneName = SceneObject.name;
 
-            if (SceneManager.GetSceneByName(sceneName).isLoaded)
-                return;
+            // if (SceneManager.GetSceneByName(sceneName).isLoaded)
+            //     return;
 
-            SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            //SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         }
 
         public void UnloadScene()
         {
             var sceneName = SceneObject.name;
 
-            if (SceneManager.GetSceneByName(sceneName).isLoaded)
-                SceneManager.UnloadSceneAsync(sceneName);
+            // if (SceneManager.GetSceneByName(sceneName).isLoaded)
+            //     SceneManager.UnloadSceneAsync(sceneName);
         }
     }
 }

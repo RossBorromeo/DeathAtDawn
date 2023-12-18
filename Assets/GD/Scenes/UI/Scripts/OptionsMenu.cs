@@ -13,50 +13,29 @@ public class OptionsMenu : MonoBehaviour
     private Slider _volumeSlider;
     [SerializeField]
     public Text _volumeText;
-    private GameObject _backButton;
+    
     private void Start()
     {
-        loadValues();
+        LoadValues();
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(01);
-        }
-        // //if user currently in mainlevel and presses escape, load main menu and pause game
-        // and then when user presses escape again, unpause game and load mainlevel
-        // if(SceneManager.GetActiveScene().buildIndex == 0)
-        // {
-        //     if (Input.GetKeyDown(KeyCode.Escape))
-        //     {
-        //         SceneManager.LoadScene(3);
-        //     }
-        // }
-    }
-
+    
     public void OnVolumeSliderChanged(float value)
     {
         _volumeText.text = _volumeSlider.value.ToString("0.0");
     }
-    public void onSaveButton()
+    public void OnSaveButton()
     {
         float volume = _volumeSlider.value;
         PlayerPrefs.SetFloat("Volume", volume);
-        loadValues();
+        LoadValues();
     }
 
-    private void loadValues()
+    private void LoadValues()
     {
         float volumeSliderValue = PlayerPrefs.GetFloat("Volume");
         _volumeSlider.value = volumeSliderValue;
         AudioListener.volume = volumeSliderValue;
     }
-    public void onBackButton()
-    {
-        SceneManager.LoadScene(01);
-        
-    }
+    
     
 }

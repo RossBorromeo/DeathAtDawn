@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: MainLevel
   m_EditorClassIdentifier: 
   uniqueID: b9f46cce-e681-4230-bd06-81448f2d0128
-  LastUpdated: 07/12/23 22:17:19
+  LastUpdated: 18/12/23 16:32:23
   LastUpdatedBy: 
   Notes: 
-  Description: 
-  SceneObject: {fileID: 0}
+  Description: This is the Main Scene of the Game which has gameplay
+  SceneObject: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
