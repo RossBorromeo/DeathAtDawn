@@ -16,7 +16,7 @@ public class HealthBehaviour : MonoBehaviour
         currentHealth = maxHealth;
         
     }
-    
+    // Update is called once per frame
     public void SetHealth(int hp)
     {
         healthBar.value = hp;
