@@ -94,11 +94,8 @@ AnimatorStateMachine:
     m_State: {fileID: -7924081446519806931}
     m_Position: {x: -420, y: -310, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2244229524695915402}
-    m_Position: {x: 213.22174, y: -169.61798, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -2619412124342195382}
-    m_Position: {x: -410, y: -150, z: 0}
+    m_Position: {x: -420, y: -190, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -5088531269036321511}
@@ -117,7 +114,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PunchRight
+  m_Name: attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -132,32 +129,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 5c01b6ed3794f1a408c52b27aac80ab7, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-2244229524695915402
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: tpose
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 416870459326255563, guid: b09d851b76d92f144abcea300e30fa58, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
