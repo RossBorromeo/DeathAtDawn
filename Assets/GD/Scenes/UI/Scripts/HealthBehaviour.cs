@@ -5,23 +5,29 @@ using UnityEngine.UI;
 public class HealthBehaviour : MonoBehaviour
 {
     public Slider healthBar;
-    public float maxHealth;
+    public float maxHealth = 100f;
     public float currentHealth;
+    public Text healthPercentage;
     private void Start()
     {
         healthBar = GetComponent<Slider>();
         healthBar.maxValue = maxHealth;
         healthBar.value = maxHealth;
         currentHealth = maxHealth;
+        
     }
+    // Update is called once per frame
     public void SetHealth(int hp)
     {
         healthBar.value = hp;
+        
     }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.value = currentHealth;
+        
+        
     }
     public void Heal(int heal)
     {
@@ -37,6 +43,10 @@ public class HealthBehaviour : MonoBehaviour
                 TakeDamage(10);
             }
         }
+    }
+    public void OnHealthSliderChanged(float value)
+    {
+         healthPercentage.text = healthBar.value.ToString("0.0");
     }
 }
 
