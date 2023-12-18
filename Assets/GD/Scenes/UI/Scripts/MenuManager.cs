@@ -24,7 +24,7 @@ public class MenuManager : MonoBehaviour
     //     SceneManager.LoadScene(0);
     // }
 
-    public void PlaySound()
+    private void PlaySound()
     {
         soundSource.clip = soundClip;
         soundSource.Play(); //play sound
