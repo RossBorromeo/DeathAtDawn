@@ -21,6 +21,7 @@ public class PlayerCombat : MonoBehaviour
     private Rigidbody playerRb;
     public AudioSource src;
     public AudioClip swingWeapon;
+    public AudioClip takeDamage;
 
 
 
@@ -73,6 +74,8 @@ void Start()
         // Play hurt animation
         animator.SetTrigger("Hurt");
 
+        src.clip = takeDamage;
+        src.Play();
         if (currentHealth <= 0)
         {
             Die();

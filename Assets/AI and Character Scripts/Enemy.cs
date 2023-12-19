@@ -26,6 +26,9 @@ public class Enemy : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0f;
     private PlayerCombat player;
+    public AudioSource src;
+    public AudioClip takeDamage;
+
 
 
     // Start is called before the first frame update
@@ -147,7 +150,8 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
+        src.clip = takeDamage;
+        src.Play();
         // Play hurt animation
         animator.SetTrigger("Hurt");
         if(currentHealth <= 0)
